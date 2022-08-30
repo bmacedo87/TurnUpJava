@@ -15,19 +15,12 @@ public class LoginPage {
     {
         this.driver = driver;
     }
-
-    public void navigateToTurnUpPortal()
+    public void loginSteps(String username, String password)
     {
         driver.get("http://horse.industryconnect.io/Account/Login?ReturnUrl=%2f");
         driver.manage().window().maximize();
-    }
-    public void loginSteps(String username, String password)
-    {
         driver.findElement(usernameTextbox).sendKeys(username);
         driver.findElement(passwordTextbox).sendKeys(password);
-    }
-    public void clickLoginButton()
-    {
         driver.findElement(loginButton).click();
     }
 }

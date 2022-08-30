@@ -7,7 +7,7 @@ Feature:
     Given I log into TurnUp portal
     When I navigate to time and material page
     When I create a new material record with "<code>", "<description>" and "<price>"
-    Then I should be able to see a new material record created
+    Then I should be able to see a new material record created with "<code>", "<description>" and "<price>"
 
     Examples:
     |code |description |price|
